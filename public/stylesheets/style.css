@@ -1,0 +1,95 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #000000;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container-fluid ul {
+  display: inline;
+}
+.panel-footer {
+  background-color: black;
+  color: grey;
+  text-align: center;
+}
+.archive {
+  background-color: #d3d3d3;
+}
+.panel-heading {
+  text-align: center;
+  font-size: 40px;
+}
+.panel-default {
+  width: 100%;
+}
+.image {
+  background-image: url("../images/pexels-photo-1098735.jpeg");
+  height: 500px;
+  background-size: cover;
+}
+.panel-body {
+    padding: 50px;
+}
+.navbar-inverse {
+    background-color: #000000;
+    border-color: white;
+    border-width: 5px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #80A1D4;
+    border-color: #80A1D4;
+}
+.panel-footer {
+    background-color: #80A1D4;
+    color: white;
+    text-align: center;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+.panel-body.col-lg-6 {
+    font-size: 30px;
+}
+h1.titel {
+    color: black;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: black;
+    border-color: white;
+}
+.panel-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-color: white;
+}
+.panel-body img {
+    height: 300px;
+    margin-left: 25%;
+}
+.footer {
+  margin-top: 2%;
+}
+label {
+  color: white;
+}
+.contact {
+  text-align: center;
+}
+.contact h1 {
+  font-size: 50px;
+}

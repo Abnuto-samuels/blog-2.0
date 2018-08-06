@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Archive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <nav class="navbar navbar-inverse col-lg-12">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h1>Weekly Sports</h1></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/create">New post</a></li>
+              <li><a href="/archive">Archive</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+        <div class="row">
+          <div class="jumbotron col-lg-12 image"></div>
+            <div class="row">
+
+              <% if (posts) { %>
+                <% posts.forEach(function(post) { %>
+                  <div class="panel-body archive">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <strong><h1 class="titel"><%= post.title %> </h1></strong>
+                            <p><%- post.content %></p>
+                            <strong><p><%= post.date %></p></strong>
+                            <p><strong>Author: <%= post.author %></strong></p>
+                            <a class="btn btn-primary btn-lg" href="/post/<%= post.id %>" role="button">Read more</a>
+                            <a class="btn btn-primary btn-lg" href="/delete/<%= post.id%>" role="button">Delete</a>
+                            <a class="btn btn-primary btn-lg" href="/edit/<%= post.id %>" role="button">Edit</a>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="<%=post.image %>" alt=""width="60%" height="60%">
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+
+                <% }); %>
+
+                <% } else { %>
+
+                  <p> you have no posts </p>
+
+
+              <% } %>
+
+
+
+
+            </div>
+
+
+      </div>
+
+      <div class="panel panel-default footer">
+        <div class="panel-footer">Copyright@AbnutoSamuels2018</div>
+      </div>
+
+
+
+
+
+
+  </body>
+</html>

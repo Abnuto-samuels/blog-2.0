@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <div class="row">
+      <nav class="navbar navbar-inverse col-lg-12">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><h1>Weekly Sports</h1></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/create">New post</a></li>
+            <li><a href="/archive">Archive</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron col-lg-12  ">
+          <img src="<%= posts.image %>" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="panel panel-default">
+          <div class="panel-heading"><%= posts.title %></div>
+          <div class="panel-body">
+            <p><strong><%= posts.date %></strong></p>
+            <p><%- posts.story %></p>
+          <p><strong>Author: <%= posts.author %></strong></p>
+        </div>
+
+
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-footer">Copyright@AbnutoSamuels2018</div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>

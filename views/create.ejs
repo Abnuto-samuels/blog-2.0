@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <style media="screen">
+      body {
+        background-color: #000000;
+      }
+      .h1, .h2, .h3, h1, h2, h3 {
+        margin-top: -7px;
+        margin-bottom: 10px;
+      }
+      form {
+        width: 100%;
+      }
+      .navbar-inverse {
+          background-color: #000000;
+          border-color: white;
+          border-width: 5px;
+      }
+      .navbar-inverse .navbar-nav>li>a {
+          color: white;
+      }
+      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+          color: white;
+      }
+      label {
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <nav class="navbar navbar-inverse col-lg-12">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h1>Weekly Sports</h1></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/create">New post</a></li>
+              <li><a href="/archive">Archive</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+        <div class="row">
+          <div class="jumbotron col-lg-12 image">
+
+          </div>
+
+
+
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Create</div>
+      </div>
+
+      <form action="/create" method="post">
+         <div class="form-group">
+           <label for="title">Title:</label>
+           <input type="text" class="form-control" name="title" id="title" placeholder="Name of blog">
+         </div>
+         <div class="form-group">
+           <label for="author">Author:</label>
+           <input type="text" class="form-control" name="author" id="author" placeholder="Name of Author">
+         </div>
+         <div class="form-group">
+           <label for="image">Image:</label>
+           <input type="text" class="form-control" name="image" id="image" placeholder="Image URL">
+         </div>
+         <div class="form-group">
+           <label for="date">Date:</label>
+           <input type="date" class="form-control" name="date" id="date" placeholder="Date">
+         </div>
+         <div>
+           <label for="summary">Summary of story:</label>
+            <textarea class="summernote" name="content"></textarea>
+         </div>
+         <div>
+           <label for="summernote">Full story:</label>
+            <textarea class="summernote" name="story"></textarea>
+         </div>
+         <button type="submit" class="btn btn-primary">Post</button>
+      </form>
+
+    </div>
+
+
+     <script type="text/javascript">
+     $(document).ready(function() {
+        $('.summernote').summernote();
+      });
+     </script>
+  </body>
+</html>

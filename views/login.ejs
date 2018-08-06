@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <style media="screen">
+    body {
+      background-image: url("https://guardian.ng/wp-content/uploads/2016/06/Sports.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    label {
+      color: white;
+    }
+    form {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1>SIGN IN</h1>
+    </div>
+
+    <form method="post" action="/">
+    <div class="info">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" name="username" placeholder="Username" id="username">
+      </div>
+
+      <div class="form-group">
+        <label for="username">Password:</label>
+        <input type="password" class="form-control"  name="password" placeholder="Password" id="password">
+      </div>
+
+    </div>
+
+
+    <a href="/index"><button type="submit" name="signin" class="btn btn-default navbar-btn">Login</button></a>
+  </form>
+  <a href="/signup"><button name="signup" class="btn btn-default navbar-btn">Sign Up</button></a>
+
+
+
+
+  </body>
+</html>
