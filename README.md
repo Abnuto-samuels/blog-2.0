@@ -1,4 +1,5 @@
 # blog-2.0
+how to make the blog work
 step 1 - you have to git clone my repo from github
 step 2 - install node js in the folder
 step 3 - watch on port 8000 (json-server --watch db.json --port 8000)
